@@ -1,0 +1,6 @@
+ScriptAlias /cgi-bin/ "c:/Users/VadimDenisovich/Desktop/WEB-2025/cgi-bin/"
+<Directory "c:/Users/VadimDenisovich/Desktop/WEB-2025/cgi-bin/">
+  Options +Indexes
+  Options +ExecCGI
+  AddHandler cgi-script .cgi
+</Directory>

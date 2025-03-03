@@ -1,0 +1,120 @@
+*{/*для всего документа*/
+    margin: 0; /*отступы*/
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Golos UI;
+}
+
+body{
+    display: flex;/*для работы с контейнерами*/
+    justify-content: center;/*контент по центру*/
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    color: #fff;
+    background:url(../images/login.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.login-container{
+    height: 50%;
+    width: 50%;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0 , .2);
+    color: azure;
+    border-radius: 10px;
+    padding: 30px, 40px;
+}
+
+.login-container h1 {
+    font-size: 36x;
+    text-align: center;
+}
+
+.login-container .input{
+    width: 100%;
+    height: 50px;
+    margin: 30 px, 0;
+    position: relative;
+}
+
+.input-box input{
+   width: 100%;
+   height: 100%;
+   background-color: transparent;/* прозрачный */
+   border: none;
+   outline: none;
+   border: 2px solid rgb(255, 255, 255, .2);
+   border-radius: 40px;
+   font-size: 16px;
+   color: #fff;
+   padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box .i{
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(50%);
+    font-size: 20px;
+}
+
+.login-container .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember label{
+    align-color: #fff;
+    margin-right: 3px;   
+}
+
+.remember a{
+    color: #ffF;
+    text-decoration: none;
+}
+
+.remember a:hover{
+    /*color: blue;  меняет цвет при наведении на забыли пароль*.*/
+    text-decoration: underline;
+}
+
+.login-container .btn{
+    width: 100%;
+    height: 45px;
+    background-color: #ffF;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1); /* тень*/
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.login-container .register{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px;
+}
+
+.register p a {
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+    color: aquamarine;
+}
